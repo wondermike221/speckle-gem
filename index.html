@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practical Todos</title>
+    <!--<link id="favicon" rel="icon" href=".ico" type="image/x-icon" />-->
+    <link rel="stylesheet" type="text/css" href="_resources\css\normalize.css" />
+    <link rel="stylesheet" type="text/css" href="_resources\css\styles.css" />
+    <link rel="stylesheet" type="text/css" href="_resources\css\bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="_resources\css\bootstrap-theme.min.css" />
+    <script src="_resources\js\jquery-3.1.0.min.js"></script>
+    <script src="_resources\js\bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div id="globalHeader">
+        <div id="globalHeaderWrapper"></div>
+    </div>
+    <div id="globalTopNav">
+        <div id="globalTopNavWrapper"></div>
+    </div>
+    <div id="mainContentWrapper">
+        <div id="mainContent">
+            <h1>Todo List</h1>
+
+            <div>
+                <button onclick="handlers.toggleAll()">Toggle All</button>
+            </div>
+            
+            <div>
+                <button onclick="handlers.addTodo()">Add</button>
+                <input id="addTodoTextInput" type="text">
+            </div>
+            
+            <div>
+                <button onclick="handlers.changeTodo()">Change Todo</button>
+                <input id="changeTodoPositionInput" type="number">
+                <input id="changeTodoTextInput" type="text">
+            </div>
+                
+            <div>
+                <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+                <input id="toggleCompletedPositionInput" type="number">
+            </div>
+            
+            <ul>
+            </ul>
+        </div>
+        <div id="globalFooter"><a href="anotherPage.html">anotherPage</a></div>
+    </div>
+    <script src="_resources\js\client.js"></script>
+  </body>
+</html>
